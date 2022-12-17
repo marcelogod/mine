@@ -65,4 +65,4 @@ iptables -A INPUT -p tcp -m conntrack --ctstate NEW -m limit --limit 60/s --limi
 iptables -A INPUT -p tcp --tcp-flags RST RST -m limit --limit 2/s --limit-burst 2 -j ACCEPT 
 
 
-output "Proteções DoS/AntiDDoS aplicadas com êxito."
+echo "Proteções DoS/AntiDDoS aplicadas com êxito."
